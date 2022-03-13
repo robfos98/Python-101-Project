@@ -32,8 +32,8 @@ while True:
         case 0: print('A tie.')
         case 1:
             print(f'Sorry, but I threw {output(beat)}.')
-            loss += 1;
+            loss += 1
         case 2:
             print(f'Nice, you beat {output(beat)}.')
-            win += 1;
+            win += 1
     print(f'You\'ve won {win} games, and lost {loss}.')
