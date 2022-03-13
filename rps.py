@@ -40,8 +40,7 @@ while True:
     if x < 0:
         break
     beat = random.choice(rps)
-    x -= rps.find(beat)
-    match x % 3:
+    match x - rps.find(beat) % 3:
         case 0:
             print('A tie.')
         case 1:
