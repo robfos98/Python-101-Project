@@ -7,13 +7,13 @@ win = 0
 loss = 0
 intro = 'Please throw Rock, Paper, or Scissors (R, P, S), or throw Q to quit.'
 def throw():
-    print('Throw:')
+    print('\nThrow:')
     x = input()
     x = x.lower()
     if x == 'p' or x == p.lower():
         return 'p'
     elif x == 'q' or x == 'quit':
-        return 'q'
+        return 'q' 
     elif x == 'r' or x == r.lower():
         return 'r'
     elif x == 's' or x == s.lower():
@@ -32,7 +32,6 @@ print('\nHello!')
 print('This program can play Rock, Paper, Scissors.')
 print(intro)
 while True:
-    print('')
     x = throw()
     if len(x) > 1:
         print(x)
